@@ -1,1 +1,26 @@
-.git
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment and lock file
+.venv/
+uv.lock
+.python-version
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS or editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# custom package
+# Python bytecode
+utils/__pycache__/
