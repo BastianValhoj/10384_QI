@@ -4,8 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qi"
-version = "0.1.0"
-description = "Quantum Information exercises and utilities"
+description = "Quantum Information utilities and exercises"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -17,4 +16,4 @@ dependencies = [
     "qutip>=5.2.1",
     "setuptools>=80.9.0"
 ]
-packages = ["utils"]
+dynamic = ["version"]

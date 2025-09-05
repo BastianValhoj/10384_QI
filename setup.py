@@ -1,13 +1,24 @@
-
 from setuptools import setup, find_packages
+import os
+
+# Read the version from utils/__init__.py
+version = {}
+with open(os.path.join("utils", "__init__.py")) as f:
+    for line in f:
+        if line.startswith("__version__"):
+            exec(line, version)
 
 setup(
-    name="qi-utils",            # Package name on PyPI or local
-    version="0.1",
-    packages=find_packages(),   # Automatically finds `utils`
-    install_requires=[          # Optional: list dependencies here
+    name="qi-utils",
+    version=version["__version__"],
+    packages=find_packages(),
+    install_requires=[
         "qutip",
         "numpy",
-        "plotly"
+        "plotly",
+        "matplotlib",
+        "ipykernel",
+        "ipympl",
+        "nbformat",
     ],
 )

@@ -1,3 +1,5 @@
+__version__ = '0.1.0'
+
 from .bloch_plotly import plot_bloch_plotly
 from .prettyprint_qutip import prettyprint, format_complex, _add_parenthesis
 
