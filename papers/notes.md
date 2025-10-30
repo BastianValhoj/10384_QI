@@ -42,5 +42,3 @@ After the EOM, the signal is passed through a PBS - the transmitted photons pass
 
 All the components have a local clock timer to time the setting choice, detection etc.
 
-
-
